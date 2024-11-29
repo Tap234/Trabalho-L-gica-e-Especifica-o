@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo do Aplicativo de Vendas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #b80202;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            padding: 1em;
+        }
+        .screen {
+            background: white;
+            border-radius: 8px;
+            padding: 1em;
+            margin-bottom: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #b80202;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b80202;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>J.S Silva LTDA - Aplicativo de Vendas</h1>
+    </header>
+
+    <div class="container">
+        <div class="screen" id="login-screen">
+            <h2>Login</h2>
+            <input type="text" placeholder="Usuário" />
+            <input type="password" placeholder="Senha" />
+            <button>Entrar</button>
+        </div>
+
+        <div class="screen" id="customer-registration-screen">
+            <h2>Cadastro de Cliente</h2>
+            <input type="text" placeholder="Nome do Cliente" />
+            <input type="text" placeholder="Endereço" />
+            <input type="text" placeholder="Contato" />
+            <button>Salvar Cliente</button>
+        </div>
+
+        <div class="screen" id="product-catalog-screen">
+            <h2>Catálogo de Produtos</h2>
+            <select>
+                <option>Produto 1 - R$10</option>
+                <option>Produto 2 - R$15</option>
+                <option>Produto 3 - R$20</option>
+            </select>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="screen" id="sales-screen">
+            <h2>Realizar Venda</h2>
+            <select>
+                <option>Selecione o Cliente</option>
+                <option>Cliente A</option>
+                <option>Cliente B</option>
+            </select>
+            <select>
+                <option>Selecione o Produto</option>
+                <option>Produto 1</option>
+                <option>Produto 2</option>
+            </select>
+            <button>Adicionar ao Carrinho</button>
+            <button>Finalizar Venda</button>
+        </div>
+
+        <div class="screen" id="sales-summary-screen">
+            <h2>Resumo da Venda</h2>
+            <p>Cliente: Cliente A</p>
+            <p>Produtos:</p>
+            <ul>
+                <li>Produto 1 - R$10</li>
+                <li>Produto 2 - R$15</li>
+            </ul>
+            <p>Total: R$25</p>
+            <button>Enviar Venda</button>
+        </div>
+    </div>
+</body>
+</html>
